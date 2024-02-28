@@ -13,6 +13,10 @@ const messages = {
     linkedin: "https://www.linkedin.com/in/prateek-shukla-026408149/",
     twitter: "https://twitter.com/iamkeetarp",
   },
+  buttons: {
+    seeMyResume: "See my resume",
+    getInTouch: "Get in touch",
+  },
 };
 
 export default messages;
