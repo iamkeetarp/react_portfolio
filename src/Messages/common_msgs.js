@@ -1,3 +1,4 @@
+/* eslint-disable no-multi-str */
 const messages = {
   navbar: {
     home: "Home",
@@ -24,10 +25,31 @@ const messages = {
   },
   headings: {
     contact: "Get in touch",
+    about: "A little bit about me",
   },
   misc: {
     contactDesc: "Let's build something together",
+    aboutDesc: "Who I am what I do.",
   },
+  contactLables: {
+    name: "Name",
+    subject: "Subject",
+    email: "Email",
+    sendEmail: "Send Email",
+    writeEmail: "Write an email",
+  },
+  homeLables: {
+    description:
+      "Java Developer with hands-on experience in designing and implementing\
+    robust applications using Spring Boot. Proficient in working with Kafka\
+    and Redis for efficient data processing and caching. Worked on SQL/PGSQL\
+    for database management and React for building responsive user\
+    interfaces. Adept at collaborating with cross-functional teams to\
+    deliver high-quality software solutions within deadlines. Eager to\
+    contribute expertise in full-stack development to a dynamic and\
+    innovative team",
+  },
+  email: "prateekshukla978@gmail.com",
 };
 
 export default messages;
