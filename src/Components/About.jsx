@@ -11,7 +11,7 @@ function About() {
     <div className="w-4/5 m-auto">
       <h1 className="text-6xl font-bold">{messages.headings.about}</h1>
       <span className="text-slate-500 my-5">{messages.misc.aboutDesc}</span>
-      <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
       <div
         id="circle"
         className="w-60 h-60 rounded-full bg-gray-900 absolute shadow-2xl"

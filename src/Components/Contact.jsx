@@ -30,7 +30,7 @@ function Contact() {
     <div className="w-4/5 m-auto">
       <h1 className="text-6xl font-bold">{messages.headings.contact}</h1>
       <span className="text-slate-500 my-5">{messages.misc.contactDesc}</span>
-      <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
       <div className="form my-5">
         <div className=" mx-auto bg-neutral-800 rounded p-5 shadow-md">
           <h1 className="text-[14px] mb-5 text-center">
