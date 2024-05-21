@@ -1,3 +1,4 @@
+import nodemailer from "nodemailer";
 var email = "prateekshukla978@gmail.com";
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",

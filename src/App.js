@@ -8,6 +8,8 @@ import Contact from "./Components/Contact";
 import More from "./Components/More";
 
 function App() {
+  console.log(56789);
+  console.log(process.env.PUBLIC_URL);
   return (
     <div className="App text-white">
       <div className="">
@@ -18,6 +20,7 @@ function App() {
         <div id="main-tab">
           <Routes>
             <Route path="/" element={<MainTab />} />
+            <Route path="/react_portfolio " element={<MainTab />} />
             <Route path="/about" element={<About />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />

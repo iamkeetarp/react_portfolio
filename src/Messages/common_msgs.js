@@ -22,10 +22,13 @@ const messages = {
   },
   labels: {
     name: "Prateek Shukla",
+    desc: "Description",
+    techStack: "Tech-Stack",
   },
   headings: {
     contact: "Get in touch",
     about: "A little bit about me",
+    work: "What I've done",
   },
   misc: {
     contactDesc: "Let's build something together",
