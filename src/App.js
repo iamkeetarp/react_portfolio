@@ -8,8 +8,6 @@ import Contact from "./Components/Contact";
 import More from "./Components/More";
 
 function App() {
-  console.log(56789);
-  console.log(process.env.PUBLIC_URL);
   return (
     <div className="App text-white">
       <div className="">

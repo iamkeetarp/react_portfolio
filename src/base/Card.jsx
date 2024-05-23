@@ -15,7 +15,7 @@ export default function Card({ data }) {
 
   return (
     <>
-      <div className="border-red-500 p-2 bg-gray-900 rounded">
+      <div className="bg-gray-400 backdrop-filter backdrop-blur-sm bg-opacity-20 rounded">
         <div id="main">
           <h6 className=" text-left ps-2 text-zinc-500 text-[13px] font-semibold">
             {data.name}
