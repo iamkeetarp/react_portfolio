@@ -29,6 +29,7 @@ const messages = {
     contact: "Get in touch",
     about: "A little bit about me",
     work: "What I've done",
+    more: "What I've worked with",
   },
   misc: {
     contactDesc: "Let's build something together",

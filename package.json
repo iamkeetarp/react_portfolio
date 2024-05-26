@@ -1,5 +1,4 @@
 {
-  "homepage": "http://iamkeetarp.github.io/react_portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +13,7 @@
     "@radix-ui/themes": "^2.0.1",
     "axios": "^1.6.7",
     "cors": "^2.8.5",
+    "dompurify": "^3.1.4",
     "dotenv-webpack": "^8.0.1",
     "flowbite-react": "^0.7.0",
     "nodemailer": "^6.9.10",

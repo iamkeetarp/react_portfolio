@@ -4,7 +4,7 @@ export const projects = [
     name: "E-Zon",
     techStack: "HTML, CSS, JS",
     url: "https://github.com/iamkeetarp/E-Zon",
-    imgUrl: "/assets/images/e-comm.jpg",
+    imgUrl: "/assets/images/projects/e-comm.jpg",
     description:
       "An E-Commerce site implementing users authentication and have products and orders section separtely for user and admin",
   },
@@ -13,7 +13,7 @@ export const projects = [
     name: "Insta Astro",
     techStack: "HTML, CSS, JS",
     url: "https://github.com/iamkeetarp/InstaAstro",
-    imgUrl: "/assets/images/insta-astro.jpg",
+    imgUrl: "/assets/images/projects/insta-astro.jpg",
     description:
       "An E-Commerce site implementing users authentication and have products and orders section separtely for user and admin",
   },
@@ -22,7 +22,7 @@ export const projects = [
     name: "Simple Portfolio",
     techStack: "HTML, CSS, JS",
     url: "https://iamkeetarp.github.io/Portfolio/",
-    imgUrl: "/assets/images/portfolio.jpg",
+    imgUrl: "/assets/images/projects/portfolio.jpg",
     description:
       "An E-Commerce site implementing users authentication and have products and orders section separtely for user and admin",
   },
@@ -31,7 +31,7 @@ export const projects = [
     name: "Recipe Finder",
     techStack: "HTML, CSS, JS",
     url: "https://github.com/iamkeetarp/dynamicRecipeFinder",
-    imgUrl: "/assets/images/recipie-finder.jpg",
+    imgUrl: "/assets/images/projects/recipie-finder.jpg",
     description:
       "An E-Commerce site implementing users authentication and have products and orders section separtely for user and admin",
   },
@@ -40,7 +40,7 @@ export const projects = [
     name: "Stock Dashboard",
     techStack: "HTML, CSS, JS",
     url: "https://github.com/iamkeetarp/StockDashboard",
-    imgUrl: "/assets/images/e-comm.jpg",
+    imgUrl: "/assets/images/projects/e-comm.jpg",
     description:
       "An E-Commerce site implementing users authentication and have products and orders section separtely for user and admin",
   },
@@ -49,7 +49,7 @@ export const projects = [
     name: "Tkinter Calculator",
     techStack: "HTML, CSS, JS",
     url: "https://github.com/iamkeetarp/Tkinter-Calculator",
-    imgUrl: "/assets/images/tkinter-calculator.jpg",
+    imgUrl: "/assets/images/projects/tkinter-calculator.jpg",
     description:
       "An E-Commerce site implementing users authentication and have products and orders section separtely for user and admin",
   },

@@ -14,7 +14,6 @@ export default function Nav() {
   const handleLinkClick = (link) => {
     setSelectedLink(link);
   };
-
   return (
     <div className="w-4/5 my-5 m-auto rounded h-full bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20  px-2 py-1 flex justify-between">
       <div className="flex">
@@ -22,8 +21,8 @@ export default function Nav() {
           <Link
             to={"/"}
             onClick={() => handleLinkClick("/")}
-            className={`text-white mx-2 text-[12px] ${
-              selectedLink === "/" ? "text-sky-400" : ""
+            className={`text-sky-300 mx-2 text-[12px] ${
+              selectedLink === "/" ? "text-sky-300" : ""
             }`}
           >
             {messages.title}
@@ -34,7 +33,7 @@ export default function Nav() {
             to={"/about"}
             onClick={() => handleLinkClick("/about")}
             className={`text-white mx-2 text-[12px] ${
-              selectedLink === "/about" ? "text-sky-500" : ""
+              selectedLink === "/about" ? "text-sky-600" : ""
             }`}
           >
             {messages.navbar.about}
@@ -43,7 +42,7 @@ export default function Nav() {
             to={"/work"}
             onClick={() => handleLinkClick("/work")}
             className={`text-white mx-2 text-[12px] ${
-              selectedLink === "/work" ? "text-sky-500" : ""
+              selectedLink === "/work" ? "text-sky-600" : ""
             }`}
           >
             {messages.navbar.work}
@@ -52,7 +51,7 @@ export default function Nav() {
             to={"/contact"}
             onClick={() => handleLinkClick("/contact")}
             className={`text-white mx-2 text-[12px] ${
-              selectedLink === "/contact" ? "text-sky-500" : ""
+              selectedLink === "/contact" ? "text-sky-600" : ""
             }`}
           >
             {messages.navbar.contact}
@@ -61,7 +60,7 @@ export default function Nav() {
             to={"/more"}
             onClick={() => handleLinkClick("/more")}
             className={`text-white mx-2 text-[12px] ${
-              selectedLink === "/more" ? "text-sky-500" : ""
+              selectedLink === "/more" ? "text-sky-600" : ""
             }`}
           >
             {messages.navbar.more}
