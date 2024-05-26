@@ -27,8 +27,10 @@ function Contact() {
     }
   };
   return (
-    <div className="w-4/5 m-auto">
-      <h1 className="text-6xl font-bold">{messages.headings.contact}</h1>
+    <div className="w-4/5 m-auto my-5">
+      <h1 className="text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl 6xl:text-6xl font-bold">
+        {messages.headings.contact}
+      </h1>
       <span className="text-slate-500 my-5">{messages.misc.contactDesc}</span>
       <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
       <div className="form my-5">
@@ -41,7 +43,7 @@ function Contact() {
             <div className="flex mb-4">
               <span
                 htmlFor="email"
-                className="w-24 text-sm rounded-l px-4 py-2 bg-black whitespace-no-wrap text-sm font-bold border-e border-zinc-600 hover:file:bg-violet-100 text-zinc-600"
+                className="w-24 rounded-l px-4 py-2 bg-black whitespace-no-wrap text-sm font-bold border-e border-zinc-600 hover:file:bg-violet-100 text-zinc-500"
               >
                 {messages.contactLables.email}
               </span>
@@ -49,14 +51,14 @@ function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                className="bg-black rounded-r px-4 py-1 w-full"
+                className="bg-black rounded-r px-2 text-sm py-1 w-full focus:outline-none"
                 onChange={handleInputChange}
               />
             </div>
             <div className="flex mb-4">
               <span
                 htmlFor="name"
-                className=" w-24 text-sm rounded-l px-4 py-1 bg-black whitespace-no-wrap text-sm font-bold border-e border-zinc-600 text-zinc-600"
+                className=" w-24 rounded-l px-4 py-1 bg-black whitespace-no-wrap text-sm font-bold border-e border-zinc-600 text-zinc-500"
               >
                 {messages.contactLables.name}
               </span>
@@ -64,14 +66,14 @@ function Contact() {
                 type="text"
                 id="name"
                 name="name"
-                className="bg-black  rounded-r px-4 py-1 w-full focus:ring-0"
+                className="bg-black  rounded-r px-2 text-sm py-1 w-full focus:ring-0 focus:outline-none"
                 onChange={handleInputChange}
               />
             </div>
             <div className="flex mb-4">
               <span
                 htmlFor="subject"
-                className="w-24 text-sm rounded-l px-4 py-1 bg-black whitespace-no-wrap text-sm font-bold border-e border-zinc-600 text-zinc-600"
+                className="w-24 rounded-l px-4 py-1 bg-black whitespace-no-wrap text-sm font-bold border-e border-zinc-600 text-zinc-500"
               >
                 {messages.contactLables.subject}
               </span>
@@ -79,7 +81,7 @@ function Contact() {
                 type="text"
                 id="subject"
                 name="subject"
-                className="bg-black rounded-r px-4 py-1 w-full focus:ring-0"
+                className="bg-black rounded-r px-2 py-1 w-full focus:ring-0 focus:outline-none"
                 onChange={handleInputChange}
               />
             </div>
@@ -91,7 +93,7 @@ function Contact() {
                 id="emailbody"
                 name="emailbody"
                 placeholder="Write your email here..."
-                className="bg-black  rounded-r px-4 py-2 w-full resize-none focus:ring-0"
+                className="bg-black text-sm placeholder-gray-zinc-500 rounded-r px-2 py-2 w-full resize-none focus:ring-0 focus:outline-none"
                 onChange={handleInputChange}
               ></textarea>
             </div>

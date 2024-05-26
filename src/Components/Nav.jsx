@@ -15,8 +15,8 @@ export default function Nav() {
     setSelectedLink(link);
   };
   return (
-    <div className="w-4/5 my-5 m-auto rounded h-full bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20  px-2 py-1 flex justify-between">
-      <div className="flex">
+    <div className="w-11/12 md:w-4/5 sm:w-4/5 my-5 m-auto rounded h-full bg-gray-400  bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20  px-2 py-1 flex justify-between">
+      <div className="flex justify-between">
         <h2 className="font-bold">
           <Link
             to={"/"}
@@ -33,7 +33,7 @@ export default function Nav() {
             to={"/about"}
             onClick={() => handleLinkClick("/about")}
             className={`text-white mx-2 text-[12px] ${
-              selectedLink === "/about" ? "text-sky-600" : ""
+              selectedLink === "/about" ? "text-sky-600 font-bold" : ""
             }`}
           >
             {messages.navbar.about}
@@ -67,7 +67,7 @@ export default function Nav() {
           </Link>
         </div>
       </div>
-      <div>
+      <div className="hidden md:block">
         <a href={messages.urls.linkedin} rel="noreferrer" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} className="mx-2" />
         </a>

@@ -18,7 +18,6 @@ function App() {
         <div id="main-tab">
           <Routes>
             <Route path="/" element={<MainTab />} />
-            <Route path="/react_portfolio " element={<MainTab />} />
             <Route path="/about" element={<About />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />

@@ -8,8 +8,10 @@ function About() {
     right: "20%",
   };
   return (
-    <div className="w-4/5 m-auto">
-      <h1 className="text-6xl font-bold">{messages.headings.about}</h1>
+    <div className="w-4/5  m-auto my-5 ">
+      <h1 className="text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl 6xl:text-6xl font-bold">
+        {messages.headings.about}
+      </h1>
       <span className="text-slate-500 my-5">{messages.misc.aboutDesc}</span>
       <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
       <div
@@ -17,7 +19,7 @@ function About() {
         className="w-60 h-60 rounded-full bg-gray-900 absolute shadow-2xl"
         style={cricle}
       ></div>
-      <div id="who-am-i" className=" w-1/2 my-9">
+      <div id="who-am-i" className="w-11/12 my-9 sm:w-full md:w-3/4 lg:w-1/2">
         <h3 className="text-white font-bold text-[16px]">Who am I ?</h3>
         <p className="text-zinc-500 mt-2">
           I'm
@@ -26,7 +28,7 @@ function About() {
           Chennai, India 🇮🇳.
         </p>
       </div>
-      <div id="what-i-do" className=" w-1/2 my-9">
+      <div id="what-i-do" className="w-11/12 my-9 sm:w-full md:w-3/4 lg:1/2">
         <h3 className="text-white font-bold text-[16px]">What I do ?</h3>
         <p className="text-zinc-500 mt-2">
           With one and half years of invaluable experience in my role at

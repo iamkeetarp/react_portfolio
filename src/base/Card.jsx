@@ -2,26 +2,17 @@ import React from "react";
 import Button from "./Button";
 import messages from "../Messages/common_msgs";
 export default function Card({ data }) {
-  const cardStyle = {
-    imgStyle: {
-      width: "300px",
-      height: "220px",
-      padding: "5px",
-      borderRadius: "10px",
-    },
-  };
-
   const descSubStr = data.description.substring(0, 90).concat("...");
 
   return (
     <>
-      <div className="bg-gray-400 backdrop-filter backdrop-blur-sm bg-opacity-20 rounded">
+      <div className="bg-gray-400 backdrop-filter backdrop-blur-sm bg-opacity-20 rounded p-2">
         <div id="main">
           <h6 className=" text-left ps-2 text-zinc-500 text-[13px] font-semibold">
             {data.name}
           </h6>
           <hr className="h-px  my-2 bg-gray-200 border-0 dark:bg-gray-700" />
-          <img src={data.imgUrl} alt="card" style={cardStyle.imgStyle} />
+          <img src={data.imgUrl} alt="card" className="object-center" />
 
           <div id="description" className="border-t mt-3">
             <label className="text-zinc-500 text-[13px]">
