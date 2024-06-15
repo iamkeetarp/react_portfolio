@@ -1,14 +1,13 @@
 import React from "react";
 import messages from "../Messages/common_msgs";
 import { skills } from "../data/skills";
+import { css } from "../Messages/common_css";
 
 export default function More() {
   return (
     <div className="w-4/5  m-auto my-5">
-      <h1 className="text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl 6xl:text-6xl font-bold">
-        {messages.headings.more}
-      </h1>
-      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+      <h1 className={css.heading}>{messages.headings.more}</h1>
+      <hr className={css.hr} />
 
       <div id="skills">
         {Object.entries(skills).map(([key, array]) => (

@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import messages from "../Messages/common_msgs";
+import { css } from "../Messages/common_css";
 export default function Card({ data }) {
   const descSubStr = data.description.substring(0, 90).concat("...");
 
@@ -11,7 +12,7 @@ export default function Card({ data }) {
           <h6 className=" text-left ps-2 text-zinc-500 text-[13px] font-semibold">
             {data.name}
           </h6>
-          <hr className="h-px  my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+          <hr className={css.hr} />
           <img src={data.imgUrl} alt="card" className="object-center" />
 
           <div id="description" className="border-t mt-3">

@@ -7,6 +7,7 @@ const messages = {
     work: "Work",
     contact: "Contact",
     more: "More",
+    resume: "Resume",
   },
   title: "Iamkeetarp",
   urls: {

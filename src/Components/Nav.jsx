@@ -22,7 +22,7 @@ export default function Nav() {
             to={"/"}
             onClick={() => handleLinkClick("/")}
             className={`text-sky-300 mx-2 text-[12px] ${
-              selectedLink === "/" ? "text-sky-300" : ""
+              selectedLink === "/" ? "text-sky-300 " : ""
             }`}
           >
             {messages.title}
@@ -33,7 +33,9 @@ export default function Nav() {
             to={"/about"}
             onClick={() => handleLinkClick("/about")}
             className={`text-white mx-2 text-[12px] ${
-              selectedLink === "/about" ? "text-sky-600 font-bold" : ""
+              selectedLink === "/about"
+                ? "text-sky-600 font-bold underline pb-1 decoration-sky-500"
+                : ""
             }`}
           >
             {messages.navbar.about}
@@ -42,7 +44,9 @@ export default function Nav() {
             to={"/work"}
             onClick={() => handleLinkClick("/work")}
             className={`text-white mx-2 text-[12px] ${
-              selectedLink === "/work" ? "text-sky-600" : ""
+              selectedLink === "/work"
+                ? "text-sky-600 font-bold underline pb-1 decoration-sky-500"
+                : ""
             }`}
           >
             {messages.navbar.work}
@@ -51,7 +55,9 @@ export default function Nav() {
             to={"/contact"}
             onClick={() => handleLinkClick("/contact")}
             className={`text-white mx-2 text-[12px] ${
-              selectedLink === "/contact" ? "text-sky-600" : ""
+              selectedLink === "/contact"
+                ? "text-sky-600 font-bold underline pb-1 decoration-sky-500"
+                : ""
             }`}
           >
             {messages.navbar.contact}
@@ -60,10 +66,23 @@ export default function Nav() {
             to={"/more"}
             onClick={() => handleLinkClick("/more")}
             className={`text-white mx-2 text-[12px] ${
-              selectedLink === "/more" ? "text-sky-600" : ""
+              selectedLink === "/more"
+                ? "text-sky-600 font-bold underline pb-1 decoration-sky-500"
+                : ""
             }`}
           >
             {messages.navbar.more}
+          </Link>
+          <Link
+            to={"/resume"}
+            onClick={() => handleLinkClick("/resume")}
+            className={`text-white mx-2 text-[12px] ${
+              selectedLink === "/resume"
+                ? "text-sky-600 font-bold underline pb-1 decoration-sky-500"
+                : ""
+            }`}
+          >
+            {messages.navbar.resume}
           </Link>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import messages from "../Messages/common_msgs";
+import { css } from "../Messages/common_css";
 
 function About() {
   const cricle = {
@@ -9,11 +10,9 @@ function About() {
   };
   return (
     <div className="w-4/5  m-auto my-5 ">
-      <h1 className="text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl 6xl:text-6xl font-bold">
-        {messages.headings.about}
-      </h1>
+      <h1 className={css.heading}>{messages.headings.about}</h1>
       <span className="text-slate-500 my-5">{messages.misc.aboutDesc}</span>
-      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+      <hr className={css.hr} />
       <div
         id="circle"
         className="w-60 h-60 rounded-full bg-gray-900 absolute shadow-2xl"
@@ -21,7 +20,7 @@ function About() {
       ></div>
       <div id="who-am-i" className="w-11/12 my-9 sm:w-full md:w-3/4 lg:w-1/2">
         <h3 className="text-white font-bold text-[16px]">Who am I ?</h3>
-        <p className="text-zinc-500 mt-2">
+        <p className={css.description}>
           I'm
           <span className="text-white font-bold"> Prateek </span> a
           multi-disciplinary backend engineer at a fintech company based in
@@ -30,7 +29,7 @@ function About() {
       </div>
       <div id="what-i-do" className="w-11/12 my-9 sm:w-full md:w-3/4 lg:1/2">
         <h3 className="text-white font-bold text-[16px]">What I do ?</h3>
-        <p className="text-zinc-500 mt-2">
+        <p className={css.description}>
           With one and half years of invaluable experience in my role at
           National Payments Corporation of India (NPCI) – a fintech company
           based in Chennai, I have honed my skills in Core Java, Springboot,

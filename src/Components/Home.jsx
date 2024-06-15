@@ -1,6 +1,7 @@
 import React from "react";
 import messages from "../Messages/common_msgs";
 import { Link } from "react-router-dom";
+import { css } from "../Messages/common_css";
 
 export default function Home() {
   const cricle = {
@@ -11,16 +12,10 @@ export default function Home() {
 
   return (
     <div className="w-4/5 m-auto my-5">
-      <div
-        id="intro"
-        className="text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl 6xl:text-6xl"
-      >
+      <div id="intro" className={css.heading}>
         I'm <span className="font-bold text-white">{messages.labels.name}</span>
       </div>
-      <div
-        id="description"
-        className="mt-5 text-slate-300 text-sm sm:text-sm md:text-base lg:text-base w-11/12 my-9 sm:w-full md:w-3/4 lg:w-1/2"
-      >
+      <div id="description" className={css.description}>
         {messages.homeLables.description}
       </div>
 

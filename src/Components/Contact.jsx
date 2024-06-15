@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import messages from "../Messages/common_msgs";
+import { css } from "../Messages/common_css";
 
 function Contact() {
   const [formData, setFormData] = useState({});
@@ -28,11 +29,9 @@ function Contact() {
   };
   return (
     <div className="w-4/5 m-auto my-5">
-      <h1 className="text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl 6xl:text-6xl font-bold">
-        {messages.headings.contact}
-      </h1>
+      <h1 className={css.heading}>{messages.headings.contact}</h1>
       <span className="text-slate-500 my-5">{messages.misc.contactDesc}</span>
-      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+      <hr className={css.hr} />
       <div className="form my-5">
         <div className=" mx-auto bg-neutral-800 rounded p-5 shadow-md">
           <h1 className="text-[14px] mb-5 text-center">
