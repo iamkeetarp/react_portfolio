@@ -21,9 +21,7 @@ export default function Nav() {
           <Link
             to={"/"}
             onClick={() => handleLinkClick("/")}
-            className={`text-sky-300 mx-2 text-[12px] ${
-              selectedLink === "/" ? "text-sky-300 " : ""
-            }`}
+            className="bg-gradient-to-r from-cyan-500 to-sky-500 bg-clip-text text-transparent"
           >
             {messages.title}
           </Link>
@@ -34,7 +32,7 @@ export default function Nav() {
             onClick={() => handleLinkClick("/about")}
             className={`text-white mx-2 text-[12px] ${
               selectedLink === "/about"
-                ? "text-sky-600 font-bold underline pb-1 decoration-sky-500"
+                ? "text-sky-500 font-bold pb-1 decoration-sky-500"
                 : ""
             }`}
           >
@@ -45,7 +43,7 @@ export default function Nav() {
             onClick={() => handleLinkClick("/work")}
             className={`text-white mx-2 text-[12px] ${
               selectedLink === "/work"
-                ? "text-sky-600 font-bold underline pb-1 decoration-sky-500"
+                ? "text-sky-500 font-bold  pb-1 decoration-sky-500"
                 : ""
             }`}
           >
@@ -56,7 +54,7 @@ export default function Nav() {
             onClick={() => handleLinkClick("/contact")}
             className={`text-white mx-2 text-[12px] ${
               selectedLink === "/contact"
-                ? "text-sky-600 font-bold underline pb-1 decoration-sky-500"
+                ? "text-sky-500 font-bold  pb-1 decoration-sky-500"
                 : ""
             }`}
           >
@@ -67,7 +65,7 @@ export default function Nav() {
             onClick={() => handleLinkClick("/more")}
             className={`text-white mx-2 text-[12px] ${
               selectedLink === "/more"
-                ? "text-sky-600 font-bold underline pb-1 decoration-sky-500"
+                ? "text-sky-500 font-bold  pb-1 decoration-sky-500"
                 : ""
             }`}
           >
@@ -78,7 +76,7 @@ export default function Nav() {
             onClick={() => handleLinkClick("/resume")}
             className={`text-white mx-2 text-[12px] ${
               selectedLink === "/resume"
-                ? "text-sky-600 font-bold underline pb-1 decoration-sky-500"
+                ? "text-sky-500 font-bold  pb-1 decoration-sky-500"
                 : ""
             }`}
           >

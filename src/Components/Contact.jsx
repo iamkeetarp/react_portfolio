@@ -1,11 +1,11 @@
 import { useState } from "react";
-import axios from "axios";
 import messages from "../Messages/common_msgs";
 import { css } from "../Messages/common_css";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const [formData, setFormData] = useState({});
-  const [buttonLable, setButtonLabel] = useState("Send Email");
+  const [isSending, setIsSending] = useState(false);
 
   const handleInputChange = (e) => {
     setFormData({
@@ -14,18 +14,27 @@ function Contact() {
     });
   };
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post(
-        "http://localhost:3003/api/saveFormData",
-        formData
+    setIsSending(true);
+    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+    console.log(e.target);
+    emailjs
+      .sendForm(
+        "service_5wry26n",
+        "template_s30lvxd",
+        e.target,
+        "inwOwOBTGUJkl3ilk"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          setIsSending(false);
+        },
+        (error) => {
+          alert("An error occurred, please try again.");
+          console.log(error.text);
+          setIsSending(false);
+        }
       );
-      console.log("Form data saved successfully:", response.data);
-      setButtonLabel("Email Sent");
-    } catch (error) {
-      console.error("Error saving form data:", error);
-    } finally {
-    }
   };
   return (
     <div className="w-4/5 m-auto my-5">
@@ -49,7 +58,7 @@ function Contact() {
               <input
                 type="email"
                 id="email"
-                name="email"
+                name="from_email"
                 className="bg-black rounded-r px-2 text-sm py-1 w-full focus:outline-none"
                 onChange={handleInputChange}
               />
@@ -64,7 +73,7 @@ function Contact() {
               <input
                 type="text"
                 id="name"
-                name="name"
+                name="user_name"
                 className="bg-black  rounded-r px-2 text-sm py-1 w-full focus:ring-0 focus:outline-none"
                 onChange={handleInputChange}
               />
@@ -90,7 +99,7 @@ function Contact() {
                 rows={5}
                 type="text"
                 id="emailbody"
-                name="emailbody"
+                name="message"
                 placeholder="Write your email here..."
                 className="bg-black text-sm placeholder-gray-zinc-500 rounded-r px-2 py-2 w-full resize-none focus:ring-0 focus:outline-none"
                 onChange={handleInputChange}
@@ -101,8 +110,9 @@ function Contact() {
               <button
                 type="submit"
                 className="text-sm border border-slate-400 x  me-5 bg-black text-white px-4 py-2 rounded hover:bg-slate-900 focus:outline-none focus:shadow-outline-black active:bg-slate-800"
+                disabled={isSending}
               >
-                {buttonLable}
+                {isSending ? "Sending..." : "Send"}
               </button>
             </div>
           </form>

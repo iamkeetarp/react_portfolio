@@ -18,7 +18,7 @@ function About() {
         className="w-60 h-60 rounded-full bg-gray-900 absolute shadow-2xl"
         style={cricle}
       ></div>
-      <div id="who-am-i" className="w-11/12 my-9 sm:w-full md:w-3/4 lg:w-1/2">
+      <div id="who-am-i" className="w-100 my-9 sm:w-full md:w-3/4 lg:w-1/2">
         <h3 className="text-white font-bold text-[16px]">Who am I ?</h3>
         <p className={css.description}>
           I'm
